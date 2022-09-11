@@ -7,7 +7,8 @@
 
 name: Build_x86_64
 
-on: 
+on:
+  repository_dispatch:
   workflow_dispatch:
  # push:
  #   branches: 
