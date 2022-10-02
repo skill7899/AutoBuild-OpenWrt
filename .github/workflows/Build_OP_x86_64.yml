@@ -70,9 +70,9 @@ jobs:
     - name: Update & Install feeds
       working-directory: ./openwrt
       run: |
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
-        ./scripts/feeds install -a
+        ./scripts/feeds install -a -p packages
+        ./scripts/feeds update packages
+        
 
     #- name: Import external feeds - passwall
     #  working-directory: ./openwrt
